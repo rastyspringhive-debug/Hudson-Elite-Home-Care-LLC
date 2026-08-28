@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-theme">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Hudson Elite Home Care LLC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Typography -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=DM+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- 1. HEADER (Dark Theme) -->
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo">
+                <a href="index.html"><img src="images/EntireLogo.png" alt="Hudson Elite Home Care Logo" class="site-logo"></a>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html" class="active-nav">Our Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-action">
+                <div class="phone-block">
+                    <span class="phone-label">CALL US NOW</span>
+                    <a href="tel:+18453706019" class="phone-number">845 370 6019</a>
+                </div>
+                <a href="contact.html" class="btn btn-accent">Book An Appointment</a>
+                <button class="mobile-nav-toggle" id="mobileMenuToggle" aria-label="Toggle Navigation">
+                    <i class="fi fi-rr-menu-burger"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE NAVIGATION OVERLAY -->
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <a href="index.html"><img src="images/EntireLogo.png" alt="Hudson Elite Home Care Logo" class="mobile-menu-logo"></a>
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close Menu">
+                <i class="fi fi-rr-cross"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav-links">
+            <ul>
+                <li><a href="index.html" class="mobile-link">Home</a></li>
+                <li><a href="about.html" class="mobile-link">About Us</a></li>
+                <li><a href="services.html" class="mobile-link active-nav">Our Services</a></li>
+                <li><a href="contact.html" class="mobile-link">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-footer">
+            <a href="tel:+18453706019" class="btn btn-outline btn-full mb-10"><i class="fi fi-rr-phone-call"></i> Call 845 370 6019</a>
+            <a href="contact.html" class="btn btn-accent btn-full">Book An Appointment</a>
+        </div>
+    </div>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" style="background-image: linear-gradient(rgba(13, 12, 15, 0.65), rgba(13, 12, 15, 0.8)), url('images/about-hero-caregiver.jpg'); background-size: cover; background-position: center 30%; border-bottom: none;">
+        <div class="container">
+            <h1 style="color: #ffffff; font-size: 4rem; margin-bottom: 10px;">Our Services</h1>
+            <p class="subtitle" style="color: var(--color-accent); font-weight: 500; font-family: var(--font-heading); text-transform: uppercase; letter-spacing: 2px;">
+                <a href="index.html" style="color: #ffffff; text-decoration: none; transition: color 0.3s;">Home</a> <span style="margin: 0 10px; color: rgba(255,255,255,0.5);">/</span> Our Services
+            </p>
+        </div>
+    </section>
+
+    <!-- FULL-WIDTH SERVICES SECTION -->
+    <section class="services-content-section" style="padding: 100px 0; background-color: var(--bg-main);">
+        <div style="max-width: 1540px; margin: 0 auto; padding: 0 40px;">
+            
+            <div class="section-heading text-center" style="margin-bottom: 60px;">
+                <span class="subheading text-accent">OUR COMPREHENSIVE SUPPORT</span>
+                <h2 style="font-size: 3.5rem;">NON-CLINICAL HOME-CARE SERVICES</h2>
+                <p style="max-width: 820px; margin: 15px auto 0; color: var(--text-muted); font-size: 1.1rem; line-height: 1.7;">
+                    We deliver dependable, compassionate non-medical home care tailored to the individual preferences, daily routines, and comfort of every client we support.
+                </p>
+            </div>
+
+            <!-- 4-Column Grid -->
+            <div class="services-row-grid" style="gap: 28px;">
+                
+                <!-- 01. Companion Care -->
+                <div class="service-card-modern" style="border-radius: 14px;">
+                    <a href="companion-care.html" class="service-card-img-wrap" style="height: 220px; display: block;">
+                        <img src="images/companion-care-cards.jpg" alt="Companion Care">
+                    </a>
+                    <div class="service-card-body" style="padding: 30px 26px;">
+                        <div>
+                            <span class="subheading text-accent" style="font-size: 0.75rem; letter-spacing: 2px; margin-bottom: 6px;">SERVICE 01</span>
+                            <h4 class="service-card-title" style="font-size: 1.5rem; margin-bottom: 18px;"><a href="companion-care.html" style="color: inherit; text-decoration: none;">COMPANION CARE</a></h4>
+                            <ul class="service-card-list" style="font-size: 0.95rem; line-height: 1.6;">
+                                <li style="margin-bottom: 12px;"><i class="fi fi-rr-check"></i> Friendly conversation & companionship</li>
+                                <li style="margin-bottom: 12px;"><i class="fi fi-rr-check"></i> Reading, hobbies & recreational activities</li>
+                                <li style="margin-bottom: 12px;"><i class="fi fi-rr-check"></i> Meaningful social interaction & presence</li>
+                                <li style="margin-bottom: 12px;"><i class="fi fi-rr-check"></i> Accompaniment during appropriate walks</li>
+                                <li><i class="fi fi-rr-check"></i> Support with keeping daily routines</li>
+                            </ul>
+                        </div>
+                        <a href="companion-care.html" class="service-card-link" style="padding-top: 18px;">Learn More <i class="fi fi-rr-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 02. Personal Care -->
+                <div class="service-card-modern" style="border-radius: 14px;">
+                    <a href="personal-care.html" class="service-card-img-wrap" style="height: 220px; display: block;">
+                        <img src="images/personal-care-towel.jpg" alt="Personal Care Assistance">
+                    </a>
+                    <div class="service-card-body" style="padding: 30px 26px;">
+                        <div>
+                            <span class="subheading text-accent" style="font-size: 0.75rem; letter-spacing: 2px; margin-bottom: 6px;">SERVICE 02</span>
+                            <h4 class="service-card-title" style="font-size: 1.5rem; margin-bottom: 18px;"><a href="personal-care.html" style="color: inherit; text-decoration: none;">PERSONAL CARE</a></h4>
+                            <ul class="service-card-list" style="font-size: 0.95rem; line-height: 1.6;">
+                                <li style="margin-bottom: 12px;"><i class="fi fi-rr-check"></i> Respectful assistance with bathing & grooming</li>
+                                <li style="margin-bottom: 12px;"><i class="fi fi-rr-check"></i> Dressing & personal styling assistance</li>
+                                <li style="margin-bottom: 12px;"><i class="fi fi-rr-check"></i> Dignified toileting & hygiene support</li>
+                                <li style="margin-bottom: 12px;"><i class="fi fi-rr-check"></i> Safe mobility, walking & transfer support</li>
+                                <li><i class="fi fi-rr-check"></i> Non-clinical personal comfort care</li>
+                            </ul>
+                        </div>
+                        <a href="personal-care.html" class="service-card-link" style="padding-top: 18px;">Learn More <i class="fi fi-rr-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 03. Homemaking -->
+                <div class="service-card-modern" style="border-radius: 14px;">
+                    <a href="homemaking.html" class="service-card-img-wrap" style="height: 220px; display: block;">
+                        <img src="images/homemaking-ironing.jpg" alt="Homemaking Services">
+                    </a>
+                    <div class="service-card-body" style="padding: 30px 26px;">
+                        <div>
+                            <span class="subheading text-accent" style="font-size: 0.75rem; letter-spacing: 2px; margin-bottom: 6px;">SERVICE 03</span>
+                            <h4 class="service-card-title" style="font-size: 1.5rem; margin-bottom: 18px;"><a href="homemaking.html" style="color: inherit; text-decoration: none;">HOMEMAKING</a></h4>
+                            <ul class="service-card-list" style="font-size: 0.95rem; line-height: 1.6;">
+                                <li style="margin-bottom: 12px;"><i class="fi fi-rr-check"></i> Light housekeeping, dusting & tidying</li>
+                                <li style="margin-bottom: 12px;"><i class="fi fi-rr-check"></i> Laundry care & changing bed linens</li>
+                                <li style="margin-bottom: 12px;"><i class="fi fi-rr-check"></i> Nutritious meal preparation & clean-up</li>
+                                <li style="margin-bottom: 12px;"><i class="fi fi-rr-check"></i> Grocery shopping & essential errands</li>
+                                <li><i class="fi fi-rr-check"></i> Household organization for safety</li>
+                            </ul>
+                        </div>
+                        <a href="homemaking.html" class="service-card-link" style="padding-top: 18px;">Learn More <i class="fi fi-rr-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 04. Respite Care -->
+                <div class="service-card-modern" style="border-radius: 14px;">
+                    <a href="respite-care.html" class="service-card-img-wrap" style="height: 220px; display: block;">
+                        <img src="images/respite-care-serving.jpg" alt="Respite Care">
+                    </a>
+                    <div class="service-card-body" style="padding: 30px 26px;">
+                        <div>
+                            <span class="subheading text-accent" style="font-size: 0.75rem; letter-spacing: 2px; margin-bottom: 6px;">SERVICE 04</span>
+                            <h4 class="service-card-title" style="font-size: 1.5rem; margin-bottom: 18px;"><a href="respite-care.html" style="color: inherit; text-decoration: none;">RESPITE CARE</a></h4>
+                            <ul class="service-card-list" style="font-size: 0.95rem; line-height: 1.6;">
+                                <li style="margin-bottom: 12px;"><i class="fi fi-rr-check"></i> Temporary relief for family caregivers</li>
+                                <li style="margin-bottom: 12px;"><i class="fi fi-rr-check"></i> Free time for work, appointments & rest</li>
+                                <li style="margin-bottom: 12px;"><i class="fi fi-rr-check"></i> Flexible scheduling (daytime or evening)</li>
+                                <li style="margin-bottom: 12px;"><i class="fi fi-rr-check"></i> Continuity of attentive, trusted care</li>
+                                <li><i class="fi fi-rr-check"></i> Unwavering peace of mind for families</li>
+                            </ul>
+                        </div>
+                        <a href="respite-care.html" class="service-card-link" style="padding-top: 18px;">Learn More <i class="fi fi-rr-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CALL TO ACTION -->
+    <section class="split-cta-section" style="grid-template-columns: 1fr; border-top: 1px solid rgba(140, 198, 63, 0.15); border-bottom: 1px solid rgba(140, 198, 63, 0.15);">
+        <div class="split-cta-block" style="background-image: linear-gradient(rgba(17, 24, 21, 0.8), rgba(21, 32, 27, 0.88)), url('images/about-cta-bg.jpg'); background-size: cover; background-position: center 35%; padding: 130px 20px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <div class="split-cta-content" style="max-width: 800px;">
+                <span class="subheading text-accent" style="font-weight: 700; letter-spacing: 2px; text-transform: uppercase;">GET IN TOUCH</span>
+                <h2 style="font-size: 3.5rem; margin: 20px 0 30px; line-height: 1.1; color: #ffffff;">Support That Feels Personal.<br>Care That Feels Like Home.</h2>
+                <a href="contact.html" class="btn btn-accent btn-large" style="padding: 18px 40px; font-size: 1.1rem; font-weight: 700;">Book An Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="site-footer-new">
+        <div class="container footer-main-wrapper">
+            <div class="footer-left-col">
+                <div class="logo">
+                    <a href="index.html"><img src="images/EntireLogo.png" alt="Hudson Elite Home Care Logo" class="site-logo"
+                        style="width: 280px; max-width: 100%;"></a>
+                </div>
+                <p class="footer-desc">Trusted home care with expert caregivers, advanced support, and compassionate
+                    care for every client.</p>
+                <div style="margin-top: 20px;">
+                    <a href="contact.html" class="btn btn-accent">Book An Appointment</a>
+                </div>
+            </div>
+
+            <div class="footer-right-col">
+                <!-- Row 1 -->
+                <div class="footer-grid-top">
+                    <div class="footer-widget">
+                        <h4>Departments</h4>
+                        <ul>
+                            <li><a href="services.html">Companion Care</a></li>
+                            <li><a href="services.html">Personal Care</a></li>
+                            <li><a href="services.html">Homemaking</a></li>
+                            <li><a href="services.html">Respite Care</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-widget">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Our Services</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-widget footer-social-section">
+                        <h4>Follow us</h4>
+                        <div class="footer-socials">
+                            <a href="#"><i class="fi fi-brands-facebook"></i></a>
+                            <a href="#"><i class="fi fi-brands-twitter"></i></a>
+                            <a href="#"><i class="fi fi-brands-instagram"></i></a>
+                            <a href="#"><i class="fi fi-brands-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="footer-grid-bottom">
+                    <div class="footer-widget">
+                        <h4>Opening Hours</h4>
+                        <ul class="hours-list">
+                            <li>Mon - Fri <span>08:30 - 18:30</span></li>
+                            <li>Sat - Sun <span>09:30 - 19:30</span></li>
+                            <li>Emergency <span>24 hours</span></li>
+                        </ul>
+                    </div>
+                    <div class="footer-widget">
+                        <h4>Inquiry</h4>
+                        <p>Phone: <a href="tel:+18453706019" style="color: inherit;">+1 845 370 6019</a></p>
+                        <p>Email: <a href="mailto:HudsonElitehomecare@gmail.com" style="color: inherit;">HudsonElitehomecare@gmail.com</a></p>
+                    </div>
+                    <div class="footer-widget">
+                        <h4>Location</h4>
+                        <p>Poughkeepsie and surrounding communities in Dutchess County, NY</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom-bar container">
+            <div class="copyright">
+                &copy; Copyright 2026 <span class="text-accent">Hudson Elite Home Care LLC</span> All Rights Reserved
+            </div>
+            <div class="developer">
+                Develop and design by <a href="https://springhive.co/" target="_blank"
+                    class="text-accent">SpringHive</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

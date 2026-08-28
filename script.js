@@ -1,15 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
     
     // 1. Sticky Header
-    const header = document.getElementById('header');
+    const header = document.querySelector('.site-header') || document.getElementById('header');
     
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    });
+    if (header) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    }
 
     // 2. Mobile Menu Toggle
     const mobileMenuToggle = document.getElementById('mobileMenuToggle');
@@ -71,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 e.preventDefault();
                 
                 // Calculate offset for fixed header
-                const headerHeight = header.offsetHeight;
+                const headerHeight = header ? header.offsetHeight : 0;
                 const elementPosition = targetElement.getBoundingClientRect().top;
                 const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
   
