@@ -302,3 +302,48 @@ if (accordionIcons.length > 0) {
         });
     });
 }
+
+// ========================================
+// UNMUTED AUTOPLAY WITH AUDIO (HERO & PROMO)
+// ========================================
+const forceUnmutedPlayback = () => {
+    // 1. Hero Background Video
+    const heroVideo = document.getElementById('heroVideo') || document.querySelector('.hero-video');
+    if (heroVideo) {
+        heroVideo.muted = false;
+        heroVideo.volume = 1.0;
+        const playPromise = heroVideo.play();
+        if (playPromise !== undefined) {
+            playPromise.catch(err => {
+                // Ensure muted state is never kept; attempt unmuted playback again
+                heroVideo.muted = false;
+                heroVideo.volume = 1.0;
+                heroVideo.play();
+            });
+        }
+    }
+
+    // 2. Vimeo Promotional Video
+    const promoIframe = document.querySelector('.video-wrapper iframe');
+    if (promoIframe && typeof Vimeo !== 'undefined') {
+        const player = new Vimeo.Player(promoIframe);
+        player.setMuted(false);
+        player.setVolume(1.0);
+        player.play().catch(err => {
+            player.setMuted(false);
+            player.setVolume(1.0);
+            player.play();
+        });
+    }
+};
+
+window.addEventListener('DOMContentLoaded', forceUnmutedPlayback);
+window.addEventListener('load', forceUnmutedPlayback);
+
+// Force unmuted audio activation instantly on initial page interaction if required by browser policy
+['click', 'touchstart', 'mousemove', 'scroll', 'keydown'].forEach(evt => {
+    window.addEventListener(evt, forceUnmutedPlayback, { once: true, passive: true });
+});
+
+
+

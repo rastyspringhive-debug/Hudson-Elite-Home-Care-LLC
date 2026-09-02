@@ -72,7 +72,7 @@
     <!-- 2. HERO SECTION (Dark Video Background) -->
     <section class="hero-section" id="home">
         <div class="hero-bg">
-            <video autoplay loop muted playsinline class="hero-video"
+            <video autoplay loop playsinline class="hero-video" id="heroVideo"
                 poster="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80">
                 <source
                     src="https://assets.mixkit.co/videos/preview/mixkit-nurse-checking-on-senior-woman-in-wheelchair-10705-large.mp4"
@@ -94,6 +94,13 @@
             <div class="hero-btns">
                 <a href="book-appointment.html" class="btn btn-accent btn-large">BOOK CONSULTATION</a>
                 <a href="services.html" class="btn btn-outline btn-large">OUR SERVICES</a>
+            </div>
+            <div class="hero-call-cta">
+                <div class="hero-call-label">
+                    <span class="hero-call-icon"><i class="fi fi-rr-phone-call"></i></span>
+                    <span>CALL US NOW</span>
+                </div>
+                <a href="tel:8453706019" class="hero-call-number">845 370 6019</a>
             </div>
         </div>
     </section>
@@ -166,6 +173,27 @@
             </div>
         </div>
     </section>
+
+    <!-- VIDEO PROMOTION SECTION -->
+    <section class="video-promo-section" id="video-promotion">
+        <div class="container text-center">
+            <div class="section-heading text-center">
+                <span class="subheading text-accent">WATCH OUR STORY</span>
+                <h2>COMPASSIONATE CARE, CENTERED AROUND YOU</h2>
+                <p class="video-promo-desc">See how Hudson Elite Home Care provides compassionate, dependable support to individuals and families in the comfort of their own homes.</p>
+            </div>
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://player.vimeo.com/video/1223205420?autoplay=1&amp;muted=0&amp;autopause=0&amp;badge=0&amp;player_id=0&amp;app_id=58479" 
+                    frameborder="0" 
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" 
+                    title="Hudson Elite Home Care - Watch Our Story" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
 
     <!-- STANDALONE MARQUEE -->
     <section class="marquee-standalone-section">
@@ -429,6 +457,7 @@
         </div>
     </footer>
 
+    <script src="https://player.vimeo.com/api/player.js"></script>
     <script src="script.js"></script>
 </body>
 
